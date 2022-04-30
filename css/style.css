@@ -98,7 +98,7 @@ blockquote {
 	width: var(--quote-image-width);
 	height: 100%;
 	opacity: 0.75;
-	background: var(--accent-color) var(--image) no-repeat center / cover;
+	background:  var(--image) no-repeat center / cover;
 	background-blend-mode: hard-light;
 }
 
