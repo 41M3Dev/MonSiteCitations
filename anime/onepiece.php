@@ -16,10 +16,24 @@
             <a href="../index.html" class="logo">Citation</a>
             <div class="header-right">
                 <a href="../php/formannonce.php">Déposer une annonce</a>
-                <a href="onepiece.php">One Piece</a>
-                <a href="naruto.php">Naruto</a>
-                <a href="#avoire">AVOIR</a>
-                <a href="#avoire">AVOIR</a>
+                <div class="menu">
+                    <button class="menubtn">Anime</button>
+                    <div class="menu-content">
+                        <a href="onepiece.php">One Piece</a>
+                        <a href="naruto.php">Naruto</a>
+                        <a href="#avoire">AVOIR</a>
+                        <a href="#avoire">AVOIR</a>
+                    </div>
+                </div>
+                <div class="menu">
+                    <button class="menubtn">Anime</button>
+                    <div class="menu-content">
+                        <a href="onepiece.php">One Piece</a>
+                        <a href="naruto.php">Naruto</a>
+                        <a href="#avoire">AVOIR</a>
+                        <a href="#avoire">AVOIR</a>
+                    </div>
+                </div>
             </div>
         </div>
         
