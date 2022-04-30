@@ -23,7 +23,7 @@
             </div>
         </div>
         
-        <h1>Citation de Naruto(Shippuden)</h1>
+        <h1>Citation de One Piece</h1>
         <?php // Affihce les valeur de la base de donnée
 $sql="SELECT `id`, `anime`, `auteur`, `citation` FROM `citation` WHERE `anime` = 'OnePiece'";
             $result = $bdd->query($sql);
