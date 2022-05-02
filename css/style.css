@@ -231,3 +231,49 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+
+/*Bouton mode nuit*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+ label > input {
+	 display: none;
+}
+ label i {
+	 margin: 0;
+	 padding: 0;
+	 display: inline-block;
+	 width: 64px;
+	 height: 40px;
+	 border-radius: 20px;
+	 vertical-align: middle;
+	 transition: 0.25s 0.09s;
+	 position: relative;
+	 background: #deeff7;
+}
+ label i:after {
+	 content: "";
+	 display: block;
+	 width: 30px;
+	 height: 30px;
+	 top: 5px;
+	 left: 5px;
+	 border-radius: 50%;
+	 background: #fff;
+	 position: absolute;
+	 box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, .4);
+	 transition: 0.15s;
+}
+
+ label > input:checked + i {
+	 background: black;
+}
+ label > input:checked + i + span {
+	 color: #29316b;
+}
+ label > input:checked + i:after {
+	 transform: translateX(25px);
+}
+ 
