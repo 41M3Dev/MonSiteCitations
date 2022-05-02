@@ -13,32 +13,10 @@
     <title>Document</title>
 </head>
 <body>
-<div class="header">
-            <a href="../index.html" class="logo">Citation</a>
-            <div class="header-right">
-                <a href="../php/formannonce.php">Déposer une annonce</a>
-                <div class="menu">
-                    <button class="menubtn">Anime</button>
-                    <div class="menu-content">
-                        <a href="../anime/onepiece.php">One Piece</a>
-                        <a href="../anime/naruto.php">Naruto</a>
-                        <a href="#avoire">AVOIR</a>
-                        <a href="#avoire">AVOIR</a>
-                    </div>
-                </div>
-                <div class="menu">
-                    <button class="menubtn">Film</button>
-                    <div class="menu-content">
-                        <a href="#avoire">AVOIR</a>
-                        <a href="#avoire">AVOIR</a>
-                        <a href="#avoire">AVOIR</a>
-                        <a href="#avoire">AVOIR</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<?php include("header.php") ?>
         <div class="container">
         <form action="" method="GET">
+       
             <label for="choix_bieres">Auteur:</label>
             <input name="auteur" list="auteur" type="text" id="fname">
             <datalist id="auteur">
@@ -54,7 +32,6 @@
       </div>
 </body>
 </html>
-
 <?php
     if(isset($_GET['envoyer'])){
             if(!empty($_GET['auteur']) && !empty($_GET['citation']))

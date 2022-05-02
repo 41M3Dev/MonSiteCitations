@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Citation</title>
-    </head>
-    <body>
-        <div class="header">
+<div class="header">
             <a href="" class="logo">Citation</a>
             <div class="header-right">
-                <a href="php/formannonce.php">Déposer une annonce</a>
+            <div class="menu">
+            <button class="menubtn">Publier</button>
+            <div class="menu-content">
+                <a href="php/annonceFilm.php">Citation de film</a>
+                <a href="php/annonceAnime.php">Citation d'anime</a>
+            </div>
+        </div>
                 <div class="menu">
                     <button class="menubtn">Anime</button>
                     <div class="menu-content">
@@ -30,9 +26,9 @@
                         <a href="#avoire">AVOIR</a>
                     </div>
                 </div>
-                
+                <label>
+                    <input class="cb cb1" type="checkbox" onclick="myFunction()" />
+                    <i></i> 
+                  </label>
             </div>
         </div>
-
-    </body>
-</html>

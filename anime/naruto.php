@@ -12,30 +12,7 @@
         <title>Citation</title>
     </head>
     <body>
-    <div class="header">
-            <a href="../index.html" class="logo">Citation</a>
-            <div class="header-right">
-                <a href="../php/formannonce.php">Déposer une annonce</a>
-                <div class="menu">
-                    <button class="menubtn">Anime</button>
-                    <div class="menu-content">
-                        <a href="onepiece.php">One Piece</a>
-                        <a href="naruto.php">Naruto</a>
-                        <a href="#avoire">AVOIR</a>
-                        <a href="#avoire">AVOIR</a>
-                    </div>
-                </div>
-                <div class="menu">
-                    <button class="menubtn">Anime</button>
-                    <div class="menu-content">
-                        <a href="onepiece.php">One Piece</a>
-                        <a href="naruto.php">Naruto</a>
-                        <a href="#avoire">AVOIR</a>
-                        <a href="#avoire">AVOIR</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <?php include("header.php") ?>
         
         <h1>Citation de Naruto(Shippuden)</h1>
         <?php // Affihce les valeur de la base de donnée
@@ -46,12 +23,18 @@
             <blockquote>
                 <p><?php echo "{$row['citation']}" ?></p>
                 <cite><?php echo "{$row['auteur']}" ?></cite>
-                <?php $nom = strtoupper($row['auteur'])  ?> <div class="blockquote-author-image" style="--image: url('../img/<?php echo "$nom.jpg" ?>')"> </div> <?php ?>
+                <?php $nom = strtoupper($row['auteur'])  ?> <div class="blockquote-author-image" style="--image: url('../img/naruto/<?php echo "$nom.jpg" ?>')"> </div> <?php ?>
             </blockquote>
         </article>
         <?php
             }
         ?>
-
+        <script>
+            function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark");
+            }
+            
+        </script>
     </body>
 </html>

@@ -276,4 +276,8 @@ input[type=submit]:hover {
  label > input:checked + i:after {
 	 transform: translateX(25px);
 }
- 
+
+.dark{
+	background-color: black;
+	color: #04AA6D;
+}
