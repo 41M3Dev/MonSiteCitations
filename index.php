@@ -9,11 +9,6 @@
     </head>
     <body>
    <?php include("header.php") ?>
-        <script>
-            function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark");
-            }
-        </script>
+   <script src="js/script.js"></script>
     </body>
 </html>
