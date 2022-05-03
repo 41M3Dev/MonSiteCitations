@@ -26,5 +26,9 @@
                 <a href="#avoire">AVOIR</a>
             </div>
         </div>
+        <label>
+            <input class="cb cb1" type="checkbox" onclick="myFunction()" />
+            <i></i> 
+        </label>
     </div>
 </div>  
