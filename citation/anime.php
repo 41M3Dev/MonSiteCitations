@@ -9,31 +9,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Citation</title>
+        <script src="../js/script.js"></script>
     </head>
     <body>
     <?php include("header.php") ?>
         
-        <h1>Citation de One Piece</h1>
+        <h1>Citation d'anime</h1>
         <?php // Affihce les valeur de la base de donnée
-$sql="SELECT `id`, `anime`, `auteur`, `citation` FROM `citation` WHERE `anime` = 'OnePiece'";
+            $sql="SELECT `id`, `anime`, `auteur`, `citation` FROM `citation`";
             $result = $bdd->query($sql);
             while ($row = $result->fetch(PDO::FETCH_ASSOC)){?>
         <article class="article">
             <blockquote>
                 <p><?php echo "{$row['citation']}" ?></p>
                 <cite><?php echo "{$row['auteur']}" ?></cite>
-                <?php $nom = strtoupper($row['auteur'])  ?> <div class="blockquote-author-image" style="--image: url('../img/onepiece/<?php echo "$nom.jpg" ?>')"> </div> <?php ?>
+                <?php $nom = strtoupper($row['auteur'])  ?>
             </blockquote>
         </article>
         <?php
             }
         ?>
-        <script>
-            function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark");
-            }
-        </script>
+
     </body>
 </html>

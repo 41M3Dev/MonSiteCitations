@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="../js/script.js"></script>
     <title>Document</title>
 </head>
@@ -14,14 +17,14 @@
         <h2>Connexion</h2>
         <form>
           <div class="info-box">
-            <input type="text" name="" required="">
+            <input type="text" name="" required>
             <label>Pseudo :</label>
           </div>
           <div class="info-box">
-            <input type="password" name="" required="">
+            <input type="password" name="" required>
             <label>Mot de passe :</label>
           </div>
-          <a href="#">
+          <a href="">
             Connexion
           </a>
         </form>

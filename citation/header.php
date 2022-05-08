@@ -9,26 +9,15 @@
             </div>
         </div>
                 <div class="menu">
-                    <button class="menubtn">Anime</button>
+                    <button class="menubtn">Citation</button>
                     <div class="menu-content">
-                        <a href="onepiece.php">One Piece</a>
-                        <a href="naruto.php">Naruto</a>
-                        <a href="#avoire">AVOIR</a>
-                        <a href="#avoire">AVOIR</a>
-                    </div>
-                </div>
-                <div class="menu">
-                    <button class="menubtn">Film</button>
-                    <div class="menu-content">
-                        <a href="#avoire">AVOIR</a>
-                        <a href="#avoire">AVOIR</a>
-                        <a href="#avoire">AVOIR</a>
-                        <a href="#avoire">AVOIR</a>
+                        <a href="film.php"><i class="fa-solid fa-film"></i> De film</a>
+                        <a href="anime.php"><i class="fa-solid fa-qrcode"></i> D'anime</a>
                     </div>
                 </div>
                 <label>
                     <input class="cb cb1" type="checkbox" onclick="myFunction()" />
                     <i></i> 
                   </label>
-            </div>
+            </div> 
         </div>

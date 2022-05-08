@@ -11,19 +11,8 @@
         <div class="menu">
             <button class="menubtn">Anime</button>
             <div class="menu-content">
-                <a href="../anime/naruto.php">Naruto</a>
-                <a href="../anime/onepiece.php">One Piece</a>
-                <a href="#avoire">AVOIR</a>
-                <a href="#avoire">AVOIR</a>
-            </div>
-        </div>
-        <div class="menu">
-            <button class="menubtn">Film</button>
-            <div class="menu-content">
-                <a href="#avoire">AVOIR</a>
-                <a href="#avoire">AVOIR</a>
-                <a href="#avoire">AVOIR</a>
-                <a href="#avoire">AVOIR</a>
+                <a href="../citation/film.php"><i class="fa-solid fa-film"></i> De film</a>
+                <a href="../citation/anime.php"><i class="fa-solid fa-qrcode"></i> D'anime</a>
             </div>
         </div>
         <label>

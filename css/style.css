@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Vollkorn:ital,wght@0,600;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 :root {
 	--type-body: Open Sans, Helvetica, Arial, sans-serif;
 	--type-quote: Vollkorn;
@@ -8,7 +9,9 @@
 	--quote-bg: hsl(0 0% 97%);
 }
 
-* {box-sizing: border-box;}
+* {
+	box-sizing: border-box;
+}
 
 body { 
   margin: 0;
@@ -51,6 +54,7 @@ body {
 .menu {
 	float: left;
 	overflow: hidden;
+  cursor: pointer;
   }
   
   .menu .menubtn { 
@@ -78,21 +82,6 @@ body {
   .menu:hover .menu-content {
 	display: block;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   @media screen and (max-width: 500px) {
 	.header a {
 	  float: none;
@@ -106,6 +95,7 @@ body {
   }
 /*Citation*/
 .article {
+	text-align:center;
 	max-width: 900px;
 	margin: auto;
 }
@@ -118,33 +108,22 @@ h1 {
 		0 4px 0 white,
 		0 6px 0 var(--accent-color);
 	font: 1.4rem var(--type-quote);
-	color: hsl(0 0% 25%);
+	color: rgb(240, 73, 73);
 }
 
 
 blockquote {
 	position: relative;
 	margin: 40px 0;
-	padding: 1.6em 2.4em .7em calc(1.4em + var(--quote-image-width));
+	padding: 1.6em 2.4em .7em;
 	font: italic 1.2rem var(--type-quote);
-	background: var(--quote-bg) no-repeat left / var(--quote-image-width);
+	background: var(--quote-bg);
 	border-radius: var(--border-rad);
 	border: 2px solid white;
-	box-shadow: 2px 2px 4px hsl(0 0% 0% / 20%);
+	box-shadow: 4px 4px 6px hsl(0deg 100% 50% / 20%);
 	text-indent: 1.6em;
 }
 
-
-.blockquote-author-image {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: var(--quote-image-width);
-	height: 100%;
-	opacity: 0.75;
-	background:  var(--image) no-repeat center / cover;
-	background-blend-mode: hard-light;
-}
 
 cite {
 	display: block;
@@ -153,7 +132,7 @@ cite {
 	text-align: center;
 	font: bold .9rem var(--type-body);
 	text-transform: uppercase;
-	color: hsl(0 0% 20%);
+	color: hsl(353deg 72% 47%);
 }
 
 
@@ -191,11 +170,6 @@ cite {
 	}
 }
 
-@media (min-width: 768px) {
-	cite {
-		margin-left: calc(1rem - var(--quote-image-width));
-	}
-}
 
 
 /*Formulaire*/
@@ -235,7 +209,7 @@ input[type=submit]:hover {
 
 /*Bouton mode nuit*/
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 
 
  label > input {
@@ -360,38 +334,3 @@ input[type=submit]:hover {
                 0 0 100px #03e9f4;
   }
   
-  .connexion-box a span {
-    position: absolute;
-    display: block;
-  }
-  
-  .connexion-box a span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #03e9f4);
-    animation: btn-anim1 1s linear infinite;
-  }
-
-  
-  .connexion-box a span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #03e9f4);
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: .25s
-  }
-  
-  
-  .connexion-box a span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #03e9f4);
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: .5s
-  }
