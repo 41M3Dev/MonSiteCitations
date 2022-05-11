@@ -20,10 +20,10 @@
 <?php include("header.php") ?>
         <div class="container">
         <form action="" method="GET">
-            <label>Film :</label>
-            <input name="film" list="auteur" type="text" id="fname">
-            <label>Auteur :</label>
-            <input name="auteur" list="auteur" type="text" id="fname">
+            <label>Musique :</label>
+            <input name="musique" list="auteur" type="text" id="fname">
+            <label>Artiste :</label>
+            <input name="artiste" list="auteur" type="text" id="fname">
             <label for="subject">Citation</label>
             <textarea id="subject" name="citation" placeholder="Votre citation" style="height:200px"></textarea>
             <input type="submit" value="Envoyer" name="envoyer">
@@ -34,16 +34,17 @@
 </html>
 <?php
     if(isset($_GET['envoyer'])){
-            if(!empty($_GET['auteur']) && !empty($_GET['citation']) && !empty($_GET['film']) )
+        
+            if(!empty($_GET['artiste']) && !empty($_GET['citation']) && !empty($_GET['musique']) )
             {
         //Récpétration des valeur
-            $auteur = htmlspecialchars($_GET['auteur']);
+            $artiste = htmlspecialchars($_GET['artiste']);
             $citation = htmlspecialchars($_GET['citation']);
-            $film = htmlspecialchars($_GET['film']);
+            $musique = htmlspecialchars($_GET['musique']);
         // Insertion des valeur dans la base de donnée
-            $requete = "INSERT INTO `citationfilm`(`film`,`auteur`,`citation`) VALUES (?,?,?)";
+            $requete = "INSERT INTO `citationmusique`(`musique`, `artiste`, `citation`) VALUES (?,?,?)";
             $res = $bdd->prepare($requete);
-            $exec = $res->execute(array($film,$auteur,$citation));
+            $exec = $res->execute(array($musique,$artiste,$citation));
             }
         }
     
