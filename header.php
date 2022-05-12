@@ -1,5 +1,5 @@
 <div class="header">
-    <a href="" class="logo">Citation</a>
+    <a href="" class="logo">Site du geek</a>
     <div class="header-right">
         <div class="menu">
             <button class="menubtn">Publier</button>
@@ -19,10 +19,9 @@
             </div>
         </div>
         <div class="menu">
-            <button class="menubtn">Connexion</button>
+            <button class="menubtn">Compte</button>
             <div class="menu-content">
                 <a href="php/connexion.php"><i class="fa-solid fa-film"></i>  Connexion</a>
-                <a href="php/inscripption.php"><i class="fa-solid fa-qrcode"></i>  Inscription</a>
             </div>
         </div>
         <label>

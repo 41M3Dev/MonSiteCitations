@@ -32,5 +32,34 @@
             </a>
         </form>
       </div>
+      <div class="inscription-box">
+        <h2>Incription</h2>
+        <form action="" method="POST">
+          <div class="input-container ic1">
+            <input id="pseudo" class="input" type="text" placeholder=" " required />
+            <div class="cut"></div>
+            <label for="pseudo" class="placeholder">Psuedo</label>
+          </div>
+          <div class="input-container ic1">
+            <input id="email" class="input" type="text" placeholder=" " requirequiredred/>
+            <div class="cut"></div>
+            <label for="email" class="placeholder">Email</label>
+          </div>
+          <div class="input-container ic1">
+            <input id="mdp" class="input" type="password" placeholder=" " required/>
+            <div class="cut"></div>
+            <label for="mdp" class="placeholder">Mot de passe</label>
+          </div>
+          
+          <div class="input-container ic2">
+            <input id="mdp-bis" class="input" type="password" placeholder=" " required/>
+            <div class="cut"></div>
+            <label for="mdp-bis" class="placeholder">Saisie de nouveau le mot de passe</label>
+          </div>
+            <a href="">
+              Inscrition
+            </a>
+        </form>
+      </div>
 </body>
 </html>
